@@ -1,0 +1,220 @@
+<script>
+    // !important: You want to give this variable(var googleLoaded = false;). This is used to run multiple chart in your jade.
+    var googleLoaded = false;
+    // !important: Define which chart packages to preload.Because this package uses ChartWrappers you can use any chart type that Google supports, but if it // isn't loaded it will load it on demand.
+    var googleChartsPackagesToLoad = ['geochart'];
+</script>
+<main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+    <breadcrum></breadcrum>
+
+    <section class="row">
+        <h1 class="pull-left">Justin Browns's Profile</h1>
+
+
+    </section>
+    <hr>
+    <section class="row">
+        <div class="col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="" alt="">
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <h4>
+                    Justin Brown
+                </h4>
+            </div>
+            <div class="row">
+                <span><label>Age:</label> 8 Years</span>
+            </div>
+            <div class="row">
+                <span><label>Gender:</label> Male</span>
+            </div>
+        </div>
+    </section>
+    <section class="row">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab1">Message Recievers(4)</a></li>
+            <li><a data-toggle="tab" href="#tab2">SMS History</a></li>
+            <li><a data-toggle="tab" href="#tab3">Reports</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <span>Mom</span>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <span><label>Email:</label> Shellybrown@gmail.com</span>
+                            <span><label>Mobile:</label> +91 9211313420</span>
+                            <span><label>Country:</label> India</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <span>Mom</span>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <span><label>Email:</label> Shellybrown@gmail.com</span>
+                            <span><label>Mobile:</label> +91 9211313420</span>
+                            <span><label>Country:</label> India</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <span>Mom</span>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <span><label>Email:</label> Shellybrown@gmail.com</span>
+                            <span><label>Mobile:</label> +91 9211313420</span>
+                            <span><label>Country:</label> India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane fade">
+
+                <div class="col-md-4 col-sm-5">
+                    <div class="tabs-left">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tabbion1" data-toggle="tab">Daddy</a></li>
+                            <li><a href="#tabbion2" data-toggle="tab">Mom</a></li>
+                            <li><a href="#tabbion3" data-toggle="tab">Uncle</a></li>
+                            <li><a href="#tabbion4" data-toggle="tab">Brother</a></li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabbion1">
+                                <div class="row">
+                                    <p class="pull-left sender">Daddy Iwant a hug, please.</p>
+                                </div>
+                                <div class="row">
+                                    <p class="pull-right reciever">Ok Dear.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabbion2">
+                                CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris
+                            </div>
+                            <div class="tab-pane" id="tabbion3">CCCCThirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+                            <div class="tab-pane" id="tabbion4">DDDDDSecondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</div>
+
+                        </div><!-- /tab-content -->
+                    </div><!-- /tabbable -->
+                </div><!-- /col -->
+
+            </div>
+            <div id="tab3" class="tab-pane fade">
+                <div class="container">
+                    <div class="title">
+                        <div class="row">
+                            <h2>KPI Reports</h2>
+                            <i class="glyphicon glyphicon-cog pull-right"></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <select class="form-control">
+                                    <option>KPI List</option>
+                                    <option>Places</option>
+                                    <option>Food</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <form [formGroup]="myForm" novalidate>
+                                    <my-date-range-picker name="mydaterange" [options]="myDateRangePickerOptions"
+                                                          formControlName="myDateRange"></my-date-range-picker>
+                                    <!-- other controls are here... -->
+                                </form></div>
+                            <div class="col-md-6">
+                                <button  type="button" class="col-md-3">
+                                Daily
+                            </button>
+                                <button  type="button" class="col-md-3">
+                                Monthly
+                            </button>
+                                <button  type="button" class="col-md-3">
+                                Weekly
+                            </button>
+                                <button  type="button" class="col-md-3">
+                                Yearly
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Panel heading without title</div>
+                                <div class="panel-body">
+                                    <canvas baseChart
+                                            [datasets]="barChartData"
+                                            [labels]="barChartLabels"
+                                            [options]="barChartOptions"
+                                            [legend]="barChartLegend"
+                                            [chartType]="barChartType"
+                                            (chartHover)="chartHovered($event)"
+                                            (chartClick)="chartClicked($event)"></canvas>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="row">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Panel heading without title</div>
+                                <div class="panel-body">
+                                    <canvas baseChart width="200" height="200"
+                                            [datasets]="lineChartData"
+                                            [labels]="lineChartLabels"
+                                            [options]="lineChartOptions"
+                                            [colors]="lineChartColors"
+                                            [legend]="lineChartLegend"
+                                            [chartType]="lineChartType"
+                                            (chartHover)="chartHovered($event)"
+                                            (chartClick)="chartClicked($event)"></canvas>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</main>

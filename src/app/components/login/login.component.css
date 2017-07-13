@@ -1,0 +1,127 @@
+
+.login-panel{
+max-width: 350px;
+position: absolute;
+left: 38%;
+  top: 10%;
+}
+.container-fluid{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+
+}
+
+.logoImage{
+width: 100%;
+margin-bottom:30px;
+}
+::-webkit-input-placeholder{
+  color: #5f588f;
+}
+.textFeild {
+height: 55px;
+color:#3f4374;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #3f4374;
+font-size: 16px;
+
+}
+.username{
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+}
+.login-panel-body {
+  margin-top: 15px;
+margin-left: -40px;
+}
+.loginButton {
+    height: 40px;
+    border-radius: 0px;
+    color: #ffffff;
+    border-color: #3f4374 !important;
+    background-color: #3f4374 !important;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.login-panel-footer{
+  margin-top: 10%;
+
+}
+a:hover, a:focus {
+    text-decoration: none;
+  }
+  .forgotPasswordLink{
+color: #3f4374;
+  font-size: 16px;
+
+  }
+  .modal-header, .modal-footer{
+    border:none;
+  }
+  .modal-footer{
+    padding-top: 0px;
+
+  }
+  .modal-body{
+  margin: 13px;
+  padding: 0px !important;
+  margin-left:25px;
+
+  }
+  .modal-dialog{
+    top:25%;
+  }
+  .modal-content{
+    height:190px;
+    border-radius: 3px;
+    font-family: roboto;
+    margin: auto;
+  }
+  .btn-default{
+    background-color: #3f4374 !important;
+    border-radius: 2px;
+    color: #ffffff;
+    width: 54px;
+    height: 30px;
+    font-size: 16px;
+
+  }
+  .password{
+    border-radius: 0px 0px 5px 5px;
+  }
+  .modal-title{
+    margin-top: 25px;
+    margin-left: 25px;
+    color:  #3f4374;
+    font-family: roboto;
+    font-size: 18px;
+
+  }
+  .login-panel-footer{
+margin-top: 20px;
+  }
+@media only screen and (min-width : 1224px)  {
+  .forgotPasswordLink {
+    margin-left: 33%;
+    color: #3f4374;
+    font-size: 16px;
+}
+.modal-content{
+  width: 400px;
+  height:190px;
+  border-radius: 3px;
+  font-family: roboto;
+  left: 60%;
+}
+.logoImage{
+  width: auto;
+  margin-left: 29%;
+
+}
+
+}
